@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.doctor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.doctor {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-info {
+    padding: 20px;
+}
+
+.doctor h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.doctor p {
+    margin: 10px 0;
+}
+
+.doctor:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .doctor {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .doctor {
+        width: 100%;
+    }
+}
