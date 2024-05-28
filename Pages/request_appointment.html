@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request an Appointment</title>
+    <link rel="stylesheet" href="request_appointment.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Request an Appointment</h1>
+            <div class="intro">
+                <p>Fill out the form below to request an appointment with one of our specialists. We will get back to you as soon as possible to confirm your appointment.</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="appointment-form-section">
+                <form class="appointment-form">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Neurology">Neurology</option>
+                            <option value="Orthopedics">Orthopedics</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="General Surgery">General Surgery</option>
+                            <option value="Endocrinology">Endocrinology</option>
+                            <option value="Gastroenterology">Gastroenterology</option>
+                            <option value="Rheumatology">Rheumatology</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Appointment Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Preferred Appointment Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Additional Notes:</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit">Submit Request</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Wellness Hopital. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
