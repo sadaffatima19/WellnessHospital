@@ -1,0 +1,139 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.intro p {
+    font-size: 1.2em;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main {
+    padding: 40px 0;
+}
+
+.portal-sections {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.portal-section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portal-info {
+    padding: 20px;
+}
+
+.portal-section h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #007bff;
+}
+
+.portal-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.portal-section ul li {
+    margin: 10px 0;
+}
+
+.portal-section ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.portal-section ul li a:hover {
+    color: #0056b3;
+}
+
+.portal-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.portal-form label {
+    margin-bottom: 5px;
+}
+
+.portal-form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.portal-form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.portal-form button:hover {
+    background-color: #0056b3;
+}
+
+.portal-section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .portal-section {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 480px) {
+    .portal-section {
+        width: 100%;
+    }
+}
